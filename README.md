@@ -1,2 +1,122 @@
 # dragonheartcafe.github.io
 Dragonheart Cafe portfolio landing page.
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dragonheart Café – Live2D Rigging</title>
+
+  <!-- Link to your external CSS file -->
+  <link rel="stylesheet" href="style.css" />
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400&family=Playfair+Display:wght@400;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <div class="site-notice">
+  This site is currently under construction. Content and layout may change.
+</div>
+  <header>
+    <h1>Dragonheart Café</h1>
+    <p> Expressive • Polished • Well-Optimised </p>
+  </header>
+
+  <section>
+    <h2>Today's Specials </h2>
+    <p>A curated selection of recent rigs showcasing my specialty; technical rigging with a focus on 3D-like forms and bouncy physics.</p>
+    
+<div class="single-video">
+  <iframe src="YOUR_MAIN_VIDEO_LINK" allowfullscreen></iframe>
+</div>
+
+  </section>
+
+  <section>
+    <h2>What I offer</h2>
+    <ul>
+      <li>Full-time solo-income Live2D artist & rigger</li>
+      <li>Masters level education in computer science</li>
+      <li>Advanced understanding of Live2D physics</li>
+      <li>Undaunted by large projects and complicated requests</li>
+      <li>Special attention to optimisation, making complex models more accessible</li>
+<li>Making the impossible possible by solving problems in novel ways</li>
+    </ul>
+
+<div class="x-embed-wrapper">
+  <blockquote class="twitter-tweet">
+    <a href="https://x.com/DragonheartCafe/status/1983936921156882459"></a>
+  </blockquote>
+
+  <blockquote class="twitter-tweet">
+    <a href="https://x.com/DragonheartCafe/status/1996594772622868552"></a>
+  </blockquote>
+</div>
+
+  </section>
+
+  <section>
+    <h2>Brew Process</h2>
+    <ol>
+      <li>PSD structure review & recommendations</li>
+      <li>Rigging (face → body → expressions → physics)</li>
+      <li>Feedback & revisions at each major stage</li>
+      <li>Delivery: VTS-ready rig & tuning assistance to get the most out of your model</li>
+    </ol>
+  </section>
+
+<section id="pricing">
+  <h2>Pricing</h2>
+
+  <div class="pricing-flex">
+
+    <!-- VIDEO -->
+    <div class="pricing-video-box">
+      <iframe 
+        src="YOUR_VIDEO_LINK_HERE"
+        frameborder="0"
+        allowfullscreen>
+      </iframe>
+    </div>
+
+    <!-- PRICE LABELS -->
+    <div class="pricing-labels">
+      <div class="price-item half-body">Half Body Rig – £XXX</div>
+      <div class="price-item full-body">Full Body Rig – £XXX</div>
+    </div>
+
+  </div>
+</section>
+
+
+
+  <section>
+    <h2>About the Barista</h2>
+    <p>
+      I'm Dawn, the creator behind Dragonheart Café; a warm, character-driven
+      brand built around art, rigging and livestreaming. As a VTuber, I understand the importance of having a model which conveys your unique spirit- I specialize
+      in personalised rigs that feel natural, responsive, and full of life.
+    </p>
+  </section>
+
+  <section>
+    <h2>Contact</h2>
+    <p>
+      <strong>Email:</strong> dawn@dragonheartcafe.com<br />
+      <strong>Discord:</strong> dragonheartcafe<br />
+      <strong>VGen:</strong> dragonheart <br />
+      <strong>Availability:</strong> Open for new commissions in 2026
+    </p>
+
+    <a class="btn" href="mailto:you@dragonheartcafe.com">Request a Quote</a>
+  </section>
+
+  <footer>
+    © Dragonheart Café • Live2D Rigging
+  </footer>
+  <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+</body>
+</html>
