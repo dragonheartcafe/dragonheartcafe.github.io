@@ -13,95 +13,333 @@
 </head>
 
 <body>
-  <div class="site-notice">
-  This site is currently under construction. Content and layout may change.
-</div>
   <header>
-    <h1>Dragonheart Café</h1>
-    <p> Fluid & Expressive Live2D Rigging </p>
+    <div class="banner-credit">
+    image by @dornenspieler
+    </div>
+    <h1><u>Dragonheart Café</u></h1>
+    <p>Fluid & Expressive Live2D Rigging</p>
   </header>
 
-  <section>
+  <nav class="site-nav">
+
+  <a href="#portfolio">Showreel</a>
+  <a href="#process">Process</a>
+  <a href="#pricing">Pricing</a>
+  <a href="#about">About</a>
+  <a href="#contact">Contact</a>
+
+  </nav>
+       <!-- SOCIAL ICONS -->
+  <div class="social-links">
+
+    <a href="https://www.twitch.tv/dragonheartcafe" target="_blank">
+      <img src="icons/twitch.svg" alt="Twitch">
+    </a>
+
+    <a href="https://x.com/DragonheartCafe" target="_blank">
+      <img src="icons/x.svg" alt="X / Twitter">
+    </a>
+
+    <a href="https://bsky.app/profile/dragonheartcafe.bsky.social" target="_blank">
+      <img src="icons/bluesky.svg" alt="Bluesky">
+    </a>
+
+  </div>
+  <section id="portfolio">
     <h2>Today's Specials </h2>
-    <p>A curated showreel of recent rigs.</p>
     
-<div class="single-video">
-  <iframe src="YOUR_MAIN_VIDEO_LINK" allowfullscreen></iframe>
+    <div class="clip-video">
+      <video preload="true" autoplay loop muted playsinline>
+        <source src="optimised_showreel.webm" type="video/webm">
+        <source src="optimised_showreel.mp4" type="video/mp4" >
+      </video>
+    </div>
+    <div class="showcase-grid">
+
+  <a href="https://youtu.be/BHs58FYQZGo?si=cujorvLhhWYV_29v" target="_blank">
+    <img src="0212-Cover.jpg" alt="Full Rig Showcase 1">
+  </a>
+
+  <a href="https://youtu.be/kzh7bV9Dl_4?si=EvWJFa8YqXuYfi--" target="_blank">
+    <img src="Yudaeko_Showcase-Cover.jpg" alt="Full Rig Showcase 2">
+  </a>
+
+  <a href="https://youtu.be/Xk80x6Aw-rQ?si=xCwo8yEOXmGP4ejS" target="_blank">
+    <img src="CamShowcase-Cover.jpg" alt="Full Rig Showcase 3">
+  </a>
+
 </div>
 
   </section>
 
-  <section>
-    <h2>What I offer</h2>
-    <ul>
-      <li>Full-time Live2D artist & rigger</li>
-      <li>Masters level education in computer science</li>
-      <li>Undaunted by large projects and complicated requests</li>
-      <li>Capable of rigging models with low or high seperation using advanced techniques</li>
-    </ul>
-
-<div class="x-embed-wrapper">
-  <blockquote class="twitter-tweet">
-    <a href="https://x.com/DragonheartCafe/status/1983936921156882459"></a>
-  </blockquote>
-
-  <blockquote class="twitter-tweet">
-    <a href="https://x.com/DragonheartCafe/status/1996594772622868552"></a>
-  </blockquote>
-</div>
-
-  </section>
-
-  <section>
+  <section id="process">
     <h2>Brew Process</h2>
     <ol>
       <li>PSD structure review & recommendations</li>
       <li>Iterative rigging (feedback & revisions at each major stage)</li>
       <li>Delivery: VTS-ready rig & tuning assistance to get the most out of your model</li>
     </ol>
+
+     <div class="clip-video">
+      <video preload="true" autoplay loop muted playsinline>
+        <source src="process.mp4" type="video/mp4" >
+      </video>
+    </div>   
   </section>
 
-<section id="pricing">
-  <h2>Pricing</h2>
-
-  <div class="pricing-flex">
-
-    <!-- VIDEO -->
-    <div class="pricing-video-box">
-      <iframe 
-        src="YOUR_VIDEO_LINK_HERE"
-        frameborder="0"
-        allowfullscreen>
-      </iframe>
-    </div>
-
-    <!-- PRICE LABELS -->
-    <div class="pricing-labels">
-      <div class="price-item half-body">Half Body from £XXX</div>
-      <div class="price-item full-body">Full Body from £XXX</div>
-    </div>
-
-  </div>
-</section>
-
-
-
-  <section>
-    <h2>About the Barista</h2>
+  <section id="pricing">
+    <h2>Pricing</h2>
     <p>
-      I'm Dawn, the creator behind Dragonheart Café; a warm, character-driven
-      brand built around art, rigging and livestreaming. As a VTuber, I understand the importance of having a model which conveys your unique spirit- I specialize
-      in personalised rigs that feel natural, responsive, and full of life.
+        - Payment plans of up to 3 months are accepted. However, files will not be delivered until final payment is received and processed. <br>
+        <br>
+        - The quote calculator below is designed to give you a rough estimate; An accurate quote will only provided once your PSD has been reviewed and we finalise the project scope.
+      </p>
+    
+
+    <div class="pricing-flex">
+
+      <!-- VIDEO -->
+      <div class="pricing-video">
+        <video preload="true" autoplay loop muted playsinline>
+          <source src="body_price.webm" type="video/webm">
+          <source src="body_price.mp4" type="video/mp4">
+        </video>
+      </div>
+
+      <!-- PRICE LABELS -->
+      <div class="pricing-labels">
+        <div class="price-item half-body">Half Body from £<span id="halfBase"></span></div>
+        <div class="price-item full-body">Full Body from £<span id="fullBase"></span></div>
+      </div>
+    </div>
+
+    
+<!-- PRICE CALCULATOR -->
+    <div class="quote-calculator">
+
+      <div class="quote-section-title">Base Price Includes</div>
+
+      <div class="quote-row">
+        <div>Standard mouth forms + VBridger
+          <div class="quote-price">All my rigs include VBridger for free</div>
+        </div>
+      </div>
+
+      <div class="quote-row">
+        <div>Advanced head & body movements
+          <div class="quote-price">Using augmented angles</div>
+        </div>
+      </div>
+
+      
+      <div class="quote-row">
+        <div>Augmented puppeteering (optional)
+          <div class="quote-price">Great for VTubers with low mobility</div>
+        </div>
+      </div>
+
+      <div class="quote-row">
+        <div>Wide range of facial expressions
+          <div class="quote-price">Tailored to your personality</div>
+        </div>
+      </div>
+
+      <div class="quote-row">
+        <div>Advanced, bespoke physics
+          <div class="quote-price">Fluid and bouncy!</div>
+        </div>
+      </div>
+
+    </div>
+
+
+      <div class="quote-section-title">Expression Toggles</div>
+
+      <div class="quote-row">
+        <div>Static/ Sticker Expressions
+          <div class="quote-price">£5 each</div>
+        </div>
+
+        <div class="qty-controls" data-price="5">
+          <button class="minus">-</button>
+          <span class="qty">0</span>
+          <button class="plus">+</button>
+        </div>
+      </div>
+
+      <div class="quote-row">
+        <div>
+          Animated Expressions
+          <div class="quote-price">£20 each</div>
+        </div>
+
+        <div class="qty-controls" data-price="20">
+          <button class="minus">-</button>
+          <span class="qty">0</span>
+          <button class="plus">+</button>
+        </div>
+      </div>
+
+      <div class="quote-section-title">Arm Toggles & Props</div>
+
+      <div class="quote-row">
+        <div>
+          Arm Pose Toggle
+          <div class="quote-price">£50 each</div>
+        </div>
+
+        <div class="qty-controls" data-price="50">
+          <button class="minus">-</button>
+          <span class="qty">0</span>
+          <button class="plus">+</button>
+        </div>
+     </div>
+
+      <div class="quote-row">
+        <div>
+          Arm Animation Toggle (eg. wave)
+          <div class="quote-price">£70 each</div>
+        </div>
+
+        <div class="qty-controls" data-price="70">
+          <button class="minus">-</button>
+          <span class="qty">0</span>
+          <button class="plus">+</button>
+        </div>
+     </div>
+
+       <div class="quote-row">
+        <div>
+          Complex Animated Prop (eg. mascot)
+          <div class="quote-price">£85 each</div>
+        </div>
+
+        <div class="qty-controls" data-price="85">
+          <button class="minus">-</button>
+          <span class="qty">0</span>
+          <button class="plus">+</button>
+        </div>
+     </div>
+
+       <div class="quote-row">
+        <div>
+          Tracked Prop (eg. nyarupad controller, mouse tracking)
+          <div class="quote-price">£100 each</div>
+        </div>
+
+        <div class="qty-controls" data-price="100">
+          <button class="minus">-</button>
+          <span class="qty">0</span>
+          <button class="plus">+</button>
+        </div>
+     </div>
+
+      <div class="quote-section-title">Customisation</div>
+
+      <div class="quote-row">
+        <div>
+          Animal Ears
+          <div class="quote-price">£15 each pair</div>
+        </div>
+
+        <div class="qty-controls" data-price="15">
+          <button class="minus">-</button>
+          <span class="qty">0</span>
+          <button class="plus">+</button>
+        </div>
+      </div>
+
+      <div class="quote-row">
+        <div>
+          Tail (one speed)
+          <div class="quote-price">£20 each</div>
+        </div>
+
+        <div class="qty-controls" data-price="15">
+          <button class="minus">-</button>
+          <span class="qty">0</span>
+          <button class="plus">+</button>
+        </div>
+      </div>
+
+       <div class="quote-row">
+        <div>
+          Tail (reactive speed)
+          <div class="quote-price">£40 each</div>
+        </div>
+
+        <div class="qty-controls" data-price="15">
+          <button class="minus">-</button>
+          <span class="qty">0</span>
+          <button class="plus">+</button>
+        </div>
+      </div>
+
+      <div class="quote-row">
+        <div>
+          Extra Hairstyle
+          <div class="quote-price">£60 each</div>
+        </div>
+
+        <div class="qty-controls" data-price="60">
+          <button class="minus">-</button>
+          <span class="qty">0</span>
+          <button class="plus">+</button>
+        </div>
+      </div>
+
+      <div class="quote-row">
+        <div>
+          Outfit Toggle
+          <div class="quote-price">£150 each</div>
+        </div>
+
+        <div class="qty-controls" data-price="150">
+          <button class="minus">-</button>
+          <span class="qty">0</span>
+          <button class="plus">+</button>
+        </div>
+      </div>
+
+      <div class="quote-totals">
+      <p>
+        Half Body + Add-ons =
+        <span id="halfGBP"></span>
+        <span class="converted" id="halfLocal"></span>
+      </p>
+
+      <p>
+        Full Body + Add-ons =
+        <span id="fullGBP"></span>
+        <span class="converted" id="fullLocal"></span>
+      </p>
+
+      <p class="pricing-note">
+        Converted totals are estimates. Final quotes are issued in GBP.
+      </p>
+      </div>
+    </div>
+
+    <h2>Budget Option: SKEB style
+    </h2>
+    <p>
+      I offer skeb-style/ 'surprise me' rigging for 60% of the total cost of a regular commission (40% discount)!
+      <br><br>
+      For this type of commission, no WIPs will be provided and no revisions may be made until the final files are delivered.
+      Once you receive your files, the commission is considered complete, but you may book me again to make revisions. Mistake fix revisions are free, but style revisions will be priced appropriately.
+      <br><br>
+      The majority of models in my portfolio were skeb rigs with no revisions! You can trust me to rig your model in a way which honours your unique personality.
     </p>
   </section>
 
-  <section>
+  <section id="contact">
     <h2>Contact</h2>
     <p>
       <strong>Email:</strong> dawn@dragonheartcafe.com<br />
       <strong>Discord:</strong> dragonheartcafe<br />
       <br>
-      <strong>Availability:</strong> April/ May slots bookable now.<br />
+      <strong>Availability:</strong> Available for May start. TAT 1-2 months depending on project scope.<br />
       <br>
       <i>Enquire or book via Email using the button below.</i>
     </p>
@@ -109,10 +347,224 @@
     <a class="btn" href="mailto:dawn@dragonheartcafe.com">Request a Quote</a>
   </section>
 
+  <section id="about">
+    <h2>About the Barista & Reviews</h2>
+    <p>
+      I'm Dawn, the creator behind Dragonheart Café; a warm, character-driven
+      brand built around art, rigging and livestreaming. As a VTuber myself, I understand the importance of having a model which conveys your unique spirit- I specialize
+      in personalised rigs that feel natural, responsive, and full of life.
+    </p>
+
+    <div class="clip-video">
+      <video preload="true" autoplay loop muted playsinline>
+      <source src="dawnclip.webm" type="video/webm">
+      <source src="dawnclip.mp4" type="video/mp4" >
+      </video>
+    </div>
+    
+         <!-- SOCIAL ICONS -->
+  <div class="social-links">
+
+    <a href="YOUR_TWITCH_LINK" target="_blank">
+      <img src="icons/twitch.svg" alt="Twitch">
+    </a>
+
+    <a href="YOUR_X_LINK" target="_blank">
+      <img src="icons/x.svg" alt="X / Twitter">
+    </a>
+
+    <a href="YOUR_BLUESKY_LINK" target="_blank">
+      <img src="icons/bluesky.svg" alt="Bluesky">
+    </a>
+
+  </div>
+
+     <div>
+      <img src="rev3.png"><img src="rev2.png"><img src="rev1.png">
+     </div>
+  </section>
+
   <footer>
     © Dragonheart Café • Live2D Rigging
   </footer>
-  <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-
+  <button id="backToTop">↑ Back to Top</button>
 </body>
 </html>
+
+<script>
+
+const halfBase = 500
+const fullBase = 820
+
+const controls = document.querySelectorAll(".qty-controls")
+
+let exchangeRate = 1
+let localCurrency = "GBP"
+
+document.getElementById("halfBase").textContent = halfBase
+document.getElementById("fullBase").textContent = fullBase
+
+/* Detect user's currency */
+function detectCurrency(){
+
+try{
+
+const locale = Intl.NumberFormat().resolvedOptions()
+
+if(locale.currency){
+localCurrency = locale.currency
+}
+
+}catch{}
+
+}
+
+/* Fetch exchange rate */
+async function fetchRate(){
+
+if(localCurrency === "GBP") return
+
+try{
+
+const response = await fetch(
+"https://api.exchangerate.host/latest?base=GBP"
+)
+
+const data = await response.json()
+
+if(data.rates[localCurrency]){
+exchangeRate = data.rates[localCurrency]
+}
+
+}catch(e){
+console.log("Exchange rate unavailable")
+}
+
+}
+
+/* Format currencies */
+
+function formatGBP(value){
+
+return new Intl.NumberFormat(undefined,{
+style:"currency",
+currency:"GBP"
+}).format(value)
+
+}
+
+function formatLocal(value){
+
+return new Intl.NumberFormat(undefined,{
+style:"currency",
+currency:localCurrency
+}).format(value)
+
+}
+
+function updateTotals(){
+
+let addons = 0
+
+controls.forEach(control => {
+
+const price = Number(control.dataset.price)
+const qty = Number(control.querySelector(".qty").textContent)
+
+addons += price * qty
+
+})
+
+const halfTotal = halfBase + addons
+const fullTotal = fullBase + addons
+
+document.getElementById("halfGBP").textContent = formatGBP(halfTotal)
+document.getElementById("fullGBP").textContent = formatGBP(fullTotal)
+
+if(localCurrency !== "GBP"){
+
+document.getElementById("halfLocal").textContent =
+formatLocal(halfTotal * exchangeRate)
+
+document.getElementById("fullLocal").textContent =
+formatLocal(fullTotal * exchangeRate)
+
+}else{
+
+document.getElementById("halfLocal").textContent = ""
+document.getElementById("fullLocal").textContent = ""
+
+}
+
+}
+
+/* Quantity controls */
+
+controls.forEach(control => {
+
+const minus = control.querySelector(".minus")
+const plus = control.querySelector(".plus")
+const qtyDisplay = control.querySelector(".qty")
+
+minus.addEventListener("click", () => {
+
+let qty = Number(qtyDisplay.textContent)
+
+if(qty > 0){
+qty--
+qtyDisplay.textContent = qty
+updateTotals()
+}
+
+})
+
+plus.addEventListener("click", () => {
+
+let qty = Number(qtyDisplay.textContent)
+
+qty++
+qtyDisplay.textContent = qty
+
+updateTotals()
+
+})
+
+})
+
+async function init(){
+
+detectCurrency()
+
+await fetchRate()
+
+updateTotals()
+
+}
+
+init()
+
+</script>
+<script>
+
+const topButton = document.getElementById("backToTop")
+
+window.addEventListener("scroll", () => {
+
+if(window.scrollY > 400){
+topButton.style.display = "block"
+}else{
+topButton.style.display = "none"
+}
+
+})
+
+topButton.addEventListener("click", () => {
+
+window.scrollTo({
+top:0,
+behavior:"smooth"
+})
+
+})
+
+</script>
